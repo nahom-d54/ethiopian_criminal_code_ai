@@ -1,0 +1,11 @@
+fastapi[standard]
+uvicorn
+faiss-cpu
+sentence-transformers
+python-jose[cryptography]
+passlib[bcrypt]
+sqlalchemy
+asyncpg
+alembic
+pydantic
+python-dotenv
