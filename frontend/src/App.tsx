@@ -1,12 +1,12 @@
 import type React from "react";
 
 import { useState, useEffect } from "react";
-import { Send, Moon, Sun } from "lucide-react";
+import { Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { Markdown } from "@/components/markdown";
-import { useTheme } from "@/hooks/use-theme";
+// import { useTheme } from "@/hooks/use-theme";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 interface Message {
@@ -35,7 +35,7 @@ export default function App() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const { theme, setTheme } = useTheme();
+  // const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   // Ensure theme component doesn't render until mounted on client
