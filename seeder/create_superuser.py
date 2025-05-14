@@ -1,10 +1,19 @@
 import asyncio
 from getpass import getpass
 from sqlalchemy.future import select
-from src.database import AsyncSessionLocal, engine, Base
-from src.models import AdminUser
-from src.auth import get_password_hash
-import argparse
+from pathlib import Path
+import sys
+
+# Add the parent directory to the system path
+parent_dir = Path(__file__).resolve().parent.parent
+if str(parent_dir) not in sys.path:
+    sys.path.append(str(parent_dir))
+
+
+from src.database import AsyncSessionLocal, engine, Base  # noqa: E402
+from src.models import AdminUser  # noqa: E402
+from src.auth import get_password_hash  # noqa: E402
+import argparse  # noqa: E402
 
 
 async def create_superuser(username=None, password=None, email=None):
