@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Install dependencies
 COPY requirements.local.txt .
-RUN pip install --no-cache-dir -r requirements.local.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . /app
 # Expose port
