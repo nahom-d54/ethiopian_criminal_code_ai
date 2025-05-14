@@ -8,9 +8,7 @@ WORKDIR /app
 COPY requirements.local.txt .
 RUN pip install --no-cache-dir -r requirements.local.txt
 
-# Copy the app source code
-COPY ./app ./app
-
+COPY . /app
 # Expose port
 EXPOSE 8000
 
