@@ -55,19 +55,18 @@ export default function App() {
 
     try {
       // Make API request
-      const response = await fetch(
-        "http://127.0.0.1:8000/api/chat/completions?api_key=c21842a475ac4a2c52d102b7f3a1da4d",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            prompt: input,
-            top_k: 3,
-          }),
-        }
-      );
+      const apiUrl = import.meta.env.VITE_API_URL;
+      const apiKey = import.meta.env.VITE_API_KEY;
+      const response = await fetch(`${apiUrl}?api_key=${apiKey}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          prompt: input,
+          top_k: 3,
+        }),
+      });
 
       if (!response.ok) {
         throw new Error("Failed to fetch response");
