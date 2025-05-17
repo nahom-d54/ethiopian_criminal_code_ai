@@ -1,5 +1,7 @@
 # Ethiopian Criminal Code Legal Assistance
 
+#### [🔗 DEMO URL](https://ai.astu.pro.et/)
+
 ## Group Members
 
 | No  | Name           | ID No.       |
