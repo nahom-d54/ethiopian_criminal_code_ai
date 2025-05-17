@@ -74,6 +74,14 @@ This project provides a legal assistance platform for the Ethiopian Criminal Cod
    python main.py
    ```
 
+### OR ForBackend alternative Using Docker
+
+```sh
+docker build -t aiapp .
+# run the app give database url as env
+docker run -d -p 8000:8000 -e DATABASE_URL=postgresql+asyncpg://...:5432/database aiapp
+```
+
 ### Frontend
 
 1. Navigate to the `frontend` directory:
