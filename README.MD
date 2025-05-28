@@ -9,7 +9,7 @@
 | 1.  | Helen Benti    | Ugr/25417/14 |
 | 2.  | Helena Beruke  | Ugr/26430/14 |
 | 3.  | Nahom Dereje   | Ugr/26395/14 |
-| 4.  | Tsion Ketema   | Ugr/26087/14 |
+| 4.  | kirubel nebyat | Ugr/22774/13 |
 | 5.  | Abel Alemayehu | Ugr/25383/14 |
 
 This project provides a legal assistance platform for the Ethiopian Criminal Code. It includes a backend API for indexing and searching legal documents using FAISS, a frontend built with React and Vite, and tools for training and embedding legal text data.
